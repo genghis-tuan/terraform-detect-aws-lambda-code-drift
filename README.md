@@ -36,13 +36,13 @@ to the code of both `lambda.py` file of the **DEPLOYED** lambdas. For example, a
 3. Click the `Deploy` button or `Shift+Cmd+U` to deploy the code.
 4. Run `terraform apply` to see which lambda detects the code change.
 5. Actually apply the Terraform by typing `yes`.
-6. Refresh the browser and check the `lambda.py of` each lambda. 
+6. Refresh the browser and check the `lambda.py` of each lambda. 
 **NOTE** that only the `code_sha256_trigger-test` lambda matches the source code in the local `lambda.py`.
 The `source_code_hash-trigger-test` lambda will still have the changes you made manually.
 
 ## Reason
-In the AWS provider 6.27.0, the `code_sha256` was moved from being just an `Attribute Reference` to an `Argument Reference`.
-This means it can be used aS input to the `aws_lambda_function` instead of being a readonly output.
+In the AWS provider version 6.27.0, the `code_sha256` was moved from being just an `Attribute Reference` to an `Argument Reference`.
+This means it can be used as input to the `aws_lambda_function` instead of being a readonly output.
 The `code_sha246` reads the actual sha256 hash of the code in the deployed lambda function using an AWS API. 
 Terraform then compares that value with the sha256 hash of the `lambda_function.zip` and determines if a redeployment is needed.
 
