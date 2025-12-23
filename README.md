@@ -64,6 +64,7 @@ yes
 ```
 
 ## Ref
-[aws_lambda_function documentation](https://registry.terraform.io/providers/hashicorp/aws/6.27.0/docs/resources/lambda_function)
-[Install Terraform](https://formulae.brew.sh/formula/tenv)
-[AWS Console Lambda us-east-1](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/begin)
+
+- [aws_lambda_function documentation](https://registry.terraform.io/providers/hashicorp/aws/6.27.0/docs/resources/lambda_function)
+- [Install Terraform](https://formulae.brew.sh/formula/tenv)
+- [AWS Console Lambda us-east-1](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/begin)
