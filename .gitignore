@@ -1,0 +1,17 @@
+# terraform
+.terraform
+*.tfstate*
+*.tfvars
+
+# No need to retain this. The purpose of this repo is to demonstrate a provider feature.
+.terraform.lock.hcl
+
+# macos
+.DS_Store
+
+# python
+*.pyc
+__pycache__
+
+# archives
+*.zip
