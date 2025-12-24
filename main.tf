@@ -7,7 +7,7 @@ resource "aws_lambda_function" "code_sha256" {
   runtime       = "python3.14"
 
   # THIS IS THE ARGUMENT THAT WILL READ THE HASH OF THE DEPLOYED CODE.
-  # If there is a difference between the deployed code's hash and the hash
+  # If there is a difference between the deployed code's hash and the hash of
   # the lambda_function.zip, it will trigger an update.
   code_sha256 = data.archive_file.lambda_zip.output_base64sha256
 }
